@@ -15,7 +15,7 @@ fn main() {
         .cpp(true)
         // Compile to a library called `lib`.
         .compile("lib");
-    
+
     // The bindgen::Builder is the main entry point
     // to bindgen, and lets you build up options for
     // the resulting bindings.
@@ -43,4 +43,3 @@ fn main() {
         .write_to_file(out_path.join("bindings.rs"))
         .expect("Couldn't write bindings!");
 }
-
